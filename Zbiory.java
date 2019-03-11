@@ -13,50 +13,50 @@ public class mian
 		Set<Integer> zbiorPierwszy = new HashSet<Integer>();
 		Set<Integer> zbiorDrugi = new HashSet<Integer>();
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Ile chcesz wprowadziæ liczb do zbioru A?");
+		System.out.println("Ile chcesz wprowadziÄ‡ liczb do zbioru A?");
 		int ileLiczbZbiorA = scan.nextInt();
 		while(ileLiczbZbiorA > 0)
 		{
-			System.out.println("Wprowadz zbiór A");
+			System.out.println("Wprowadz zbiÃ³r A");
 			int zbiorA = scan.nextInt();
 			zbiorPierwszy.add(zbiorA);
 			ileLiczbZbiorA--;
 		}
 		System.out.println("Zbior A "+zbiorPierwszy);
-		System.out.println("Ile liczb chcesz wprowadziæ do zbioru B?");
+		System.out.println("Ile liczb chcesz wprowadziÄ‡ do zbioru B?");
 		int ileLiczbZbiorB = scan.nextInt();
 		while(ileLiczbZbiorB > 0)
 		{
-			System.out.println("Wprowadz zbiór B");
+			System.out.println("Wprowadz zbiÃ³r B");
 			int zbiorB = scan.nextInt();
 			zbiorDrugi.add(zbiorB);
 			ileLiczbZbiorB--;
 		}
-		System.out.println("Zbór B "+zbiorDrugi);
-		System.out.println("Jak¹ operacje chcesz wykonaæ? \n"
-				+          "1. Suma zbiorów \n"
-				+ 		   "2. Ró¿nica zbiorów \n"
-				+          "3. Czêœæ wspólna \n"
-				+          "4. Ró¿nica symetryczna \n");
+		System.out.println("ZbÃ³r B "+zbiorDrugi);
+		System.out.println("JakÄ… operacje chcesz wykonaÄ‡? \n"
+				+          "1. Suma zbiorÃ³w \n"
+				+ 		   "2. RÃ³Å¼nica zbiorÃ³w \n"
+				+          "3. CzÄ™Å›Ä‡ wspÃ³lna \n"
+				+          "4. RÃ³Å¼nica symetryczna \n");
 			int wybor = scan.nextInt();
 			switch(wybor)
 			{
 				case 1:
 				{
 					zbiorPierwszy.addAll(zbiorDrugi);
-					System.out.println("Suma zbiorów "+zbiorPierwszy);
+					System.out.println("Suma zbiorÃ³w "+zbiorPierwszy);
 					break;
 				}
 				case 2:
 				{
 					zbiorPierwszy.removeAll(zbiorDrugi);
-					System.out.println("Wynik ró¿nicy zbiorów "+zbiorPierwszy);
+					System.out.println("Wynik rÃ³Å¼nicy zbiorÃ³w "+zbiorPierwszy);
 					break;
 				}
 				case 3:
 				{
 					zbiorPierwszy.retainAll(zbiorDrugi);
-					System.out.println("Czêœæ wspólna zbiorów "+zbiorPierwszy);
+					System.out.println("CzÄ™Å›Ä‡ wspÃ³lna zbiorÃ³w "+zbiorPierwszy);
 					break;
 				}
 				case 4:
@@ -68,12 +68,12 @@ public class mian
 				roznicaSymetryczna.addAll(zbiorPierwszy);
 				roznicaSymetryczna.addAll(zbiorDrugi);
 				roznicaSymetryczna.removeAll(czescWspolna);
-				System.out.println("Wynik ró¿nicy symetrycznej "+roznicaSymetryczna);
+				System.out.println("Wynik rÃ³Å¼nicy symetrycznej "+roznicaSymetryczna);
 						
 					break;
 				}
 				default: 
-				System.out.println("Bl¹d!");
+				System.out.println("BlÄ…d!");
 			}
 	}
 }
