@@ -6,17 +6,8 @@ import java.util.Random;
 import java.util.Scanner;
 public class Main {
 
-	// tutaj muszê umieœciæ static przed double. Dlaczego? 
-	//double[] scopeNumberArray = {2.0, 3.0, 3.5, 4.0, 4.5, 5.0};
-	//double arrayRandomNumber;
-	//double average = 0;
-	public static void main(String[] args)
+ public static void main(String[] args)
 	{
-	// Tablica
-	// Jeœli zrobiê Double to dzia³a bez static
-
-	//max = scopeNumberArray[0];
-	//min = scopeNumberArray[0];
 	
 	System.out.println("Podaj rozmiar tablicy");
 	//Scaner liczb
@@ -30,7 +21,6 @@ public class Main {
 	double min = arrayRandomNumber[0];
 	double max = arrayRandomNumber[0];
     double [] helpArray = arrayRandomNumber;
-  //  double[] helpNumber = null;
     double standardDeviationSqrt = 0;
     double standardDeviationPow = 0;
 	while(sizeTab>0)
