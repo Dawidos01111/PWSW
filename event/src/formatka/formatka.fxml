@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="405.0" prefWidth="559.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controll">
+   <children>
+      <AnchorPane layoutX="-9.0" layoutY="-4.0" prefHeight="414.0" prefWidth="568.0" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="-9.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-4.0">
+         <children>
+            <Button fx:id="loginButton" layoutX="15.0" layoutY="149.0" mnemonicParsing="false" onAction="#logSend" text="Send" />
+            <CheckBox fx:id="showPassLog" layoutX="137.0" layoutY="153.0" mnemonicParsing="false" onAction="#showPassLog" text="Show password" />
+            <TextField fx:id="logLogin" layoutX="72.0" layoutY="56.0" promptText="podaj login" />
+            <TextField fx:id="regName" layoutX="394.0" layoutY="56.0" promptText="wpisz imię" />
+            <TextField fx:id="regSurname" layoutX="394.0" layoutY="89.0" promptText="wpisz nazwisko" />
+            <TextField fx:id="regLogin" layoutX="394.0" layoutY="124.0" promptText="wpisz login" />
+            <TextField fx:id="regEmail" layoutX="394.0" layoutY="157.0" promptText="wpisz email" />
+            <Label layoutX="50.0" layoutY="28.0" text="Log in" />
+            <Label layoutX="449.0" layoutY="28.0" text="Registration" />
+            <Label layoutX="23.0" layoutY="60.0" text="Login" />
+            <Label layoutX="23.0" layoutY="106.0" text="Hasło" />
+            <Label layoutX="342.0" layoutY="60.0" text="Imię" />
+            <Label layoutX="329.0" layoutY="93.0" text="Nazwisko" />
+            <Label layoutX="340.0" layoutY="128.0" text="Login" />
+            <Label layoutX="341.0" layoutY="161.0" text="email" />
+            <Label layoutX="340.0" layoutY="203.0" text="Hasło" />
+            <Button fx:id="butt2" layoutX="334.0" layoutY="272.0" mnemonicParsing="false" onAction="#regSend" text="Send" />
+            <CheckBox fx:id="showPassReg" layoutX="464.0" layoutY="276.0" mnemonicParsing="false" onAction="#showPassReg" text="Show password" />
+            <Label layoutX="316.0" layoutY="236.0" text="Powtórz hasło" />
+            <PasswordField fx:id="regPass" layoutX="394.0" layoutY="191.0" />
+            <PasswordField fx:id="regPassConf" layoutX="394.0" layoutY="232.0" />
+            <Label fx:id="checkRegister" layoutX="235.0" layoutY="320.0" prefHeight="25.0" prefWidth="322.0" />
+            <Label fx:id="logInfo" layoutX="24.0" layoutY="195.0" prefHeight="17.0" prefWidth="300.0" />
+            <PasswordField fx:id="logPass" layoutX="72.0" layoutY="102.0" />
+            <Button fx:id="clearButtonLog" layoutX="72.0" layoutY="149.0" mnemonicParsing="false" onAction="#clearFieldLog" text="Clear" />
+            <Button fx:id="clearButtonReg" layoutX="391.0" layoutY="272.0" mnemonicParsing="false" onAction="#clearFieldReg" text="Clear" />
+            <Label fx:id="infoReg" layoutX="322.0" layoutY="383.0" prefHeight="17.0" prefWidth="222.0" />
+            <Label fx:id="mailInfo" layoutX="326.0" layoutY="359.0" prefHeight="17.0" prefWidth="222.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
